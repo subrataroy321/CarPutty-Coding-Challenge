@@ -1,17 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 .App {
   text-align: center;
   height: 100vh;
+  background-color: #eef2f8;
+  font-family: 'Poppins', sans-serif;
 }
 .container {
-  width: 350px;
+  width: 300px;
   display: flex;
   justify-content: center;
-  place-items: center;
-  border: 1px solid black;
-  margin: 70px;
+  align-content: center;
+  padding: 70px;
 }
 
 .input-container {
   font-size: 1.5em;
-  width: 350px;
+  width: 300px;
+  padding-top: 20px;
+}
+
+.speech-bubble {
+	/* layout */
+	position: relative;
+	max-width: 30em;
+  height: 40px;
+	
+	/* looks */
+	background-color: #c8defa;
+	padding: .300em 1.5em;
+	font-size: 1.25em;
+  color: #1379ff;
+	border-radius: 1rem;
+  box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+}
+
+.speech-bubble::after {
+	/* layout */
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: 100%;
+	/* left: 1.5em;  offset should move with padding of parent */
+	border: .75rem solid transparent;
+	border-bottom: none;
+
+	/* looks */
+	border-top-color: #c8defa;
+	filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
+}
+
+.donation-box {
+  text-align: left;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+
+}
+
+.donation {
+  padding:  5px 50px 50px 50px;
+}
+
+.donation>h2 {
+  padding-bottom: 20px;
+}
+
+.progress {
+  background-color: rgb(212, 247, 214);
+  border-radius: 10px 10px 0 0;
+  height: 15px;
+}
+
+.input-group-addon {
+  font-size: 18px;
+  line-height: 1;
+  color: rgb(180, 179, 179);
+  text-align: center;
+  background-color: white;
+  border-right: none;
+  border-radius: 4px 4px 0 0;
+}
+
+.form-control {
+  border-left: none;
+  border-radius: 0px;
+  font-size: 18px;
+  padding-left: 0;
+}
+
+.btn {
+  border-radius: 0 0 4px 4px;
+  font-size: 18px;
 }
