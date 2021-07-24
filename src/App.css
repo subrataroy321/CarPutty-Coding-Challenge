@@ -6,6 +6,8 @@
   background-color: #eef2f8;
   font-family: 'Poppins', sans-serif;
 }
+
+/* Main container */
 .container {
   width: 300px;
   display: flex;
@@ -14,12 +16,31 @@
   padding: 70px;
 }
 
+/* Donation box container */
+.donation-box {
+  text-align: left;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+}
+
+.donation {
+  padding:  5px 50px 50px 50px;
+}
+
+.donation>h2 {
+  padding-bottom: 20px;
+}
+
+/* Donation box input container */
 .input-container {
   font-size: 1.5em;
   width: 300px;
   padding-top: 20px;
 }
 
+/* Speech Bubble */
 .speech-bubble {
 	/* layout */
 	position: relative;
@@ -32,13 +53,15 @@
 	font-size: 1.25em;
   color: #1379ff;
 	border-radius: 1rem;
-  box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+  border: none;
 }
 
+/* Speech bubble down arrow */
 .speech-bubble::after {
 	/* layout */
 	content: '';
 	position: absolute;
+  right: 15%;
 	width: 0;
 	height: 0;
 	top: 100%;
@@ -48,26 +71,11 @@
 
 	/* looks */
 	border-top-color: #c8defa;
-	filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
 }
 
-.donation-box {
-  text-align: left;
-  margin-top: 20px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+/* Overriding bootstrap default design */
 
-}
-
-.donation {
-  padding:  5px 50px 50px 50px;
-}
-
-.donation>h2 {
-  padding-bottom: 20px;
-}
-
+/* Progress bar */
 .progress {
   background-color: rgb(212, 247, 214);
   border-radius: 10px 10px 0 0;
@@ -81,7 +89,7 @@
   text-align: center;
   background-color: white;
   border-right: none;
-  border-radius: 4px 4px 0 0;
+  border-radius: 4px 0 0 4px;
 }
 
 .form-control {
@@ -92,6 +100,6 @@
 }
 
 .btn {
-  border-radius: 0 0 4px 4px;
+  border-radius: 0 4px 4px 0;
   font-size: 18px;
 }
